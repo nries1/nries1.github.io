@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import style from '../style/root.module.css'
 
-class Root extends Component {
+class Root extends Component<{}, { config: { [index: string]: any } }> {
   constructor(props: { [index: string]: any }) {
     super(props)
     this.state = {
