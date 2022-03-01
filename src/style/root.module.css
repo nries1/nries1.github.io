@@ -1,0 +1,17 @@
+html,
+div,
+button,
+b,
+th,
+td,
+input,
+a {
+  font-family: 'Poppins', Roboto, sans-serif !important;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

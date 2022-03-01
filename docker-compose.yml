@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  web:
+    build:
+      # build the app from cwd
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '5050:5050'
+    volumes:
+      # don't map node_modules between local and container, just use the version inside the container
+      - /app/node_modules
+      # map the current folder outside the container to the current folder inside the container (for hot reloading)
+      - .:/home/node/app
+    stdin_open: true
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /app/node_modules
+      - .:/home/node/app
+    command: ['npm', 'run', 'test']
