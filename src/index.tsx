@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Root from './components/Root'
 // import reportWebVitals from './reportWebVitals';
+console.log('RENDERING INTO ', document.getElementById('root'))
 
 ReactDOM.render(
   <React.StrictMode>
