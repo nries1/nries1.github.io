@@ -15,11 +15,7 @@ class Root extends Component<{}, { config: { [index: string]: any } }> {
     const {
       state: { config },
     } = this
-    return (
-      <div className={style.root} style={config.root}>
-        <div className={style.selections} style={config.selections}></div>
-      </div>
-    )
+    return <div className={style.root}>Beam Widget</div>
   }
 }
 
