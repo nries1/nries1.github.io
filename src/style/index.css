@@ -1,4 +1,10 @@
-.root {
+html,
+div,
+button,
+b,
+th,
+td,
+input,
+a {
   font-family: 'Poppins', Roboto, sans-serif !important;
-  font-size: 24px;
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Root from './components/Root'
+import './style/index.css'
 // import reportWebVitals from './reportWebVitals';
 console.log('RENDERING INTO ', document.getElementById('root'))
 
